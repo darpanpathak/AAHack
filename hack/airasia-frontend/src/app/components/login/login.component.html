@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="wrapper">
+        <form class="form-signin" [formGroup]="frmsignIn" (ngSubmit)="doLogin(frmsignIn)">
+            <div style="text-align:center">
+                <img src="./assets/images/logo.png" />
+            </div>
+            <h3 class="form-signin-heading">Welcome Back to Air Asia ! Please Sign In</h3>
+            <hr class="colorgraph"><br>
+            <input type="text" class="form-control" formControlName="username" placeholder="Username" required="" autofocus="" />
+            <input type="password" class="form-control" formControlName="password" placeholder="Password" required="" />
+
+            <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-lg-6" *ngIf="flightDetail.BookingStatus">
+        <h2>Booking Status : {{flightDetail.BookingStatus}}</h2>
+        <h2>PNR : {{flightDetail.PNR}}</h2>
+    </div>
+    <div class="col-lg-6" *ngIf="otherDetail.canGoOut">
+
+        <h4>Halt time : {{otherDetail.haltTime}} minutes</h4>
+        <h4>Halt At : {{otherDetail.station}}</h4>
+
+        Thank you for choosing air asia. We have noticed that there is a decent amount of gap between your flights at {{otherDetail.station}} station. We have some of the services which you can avail at that station to make your journey pleasent. They are as
+        follows : <br>
+        <ul>
+            <li>We can arrange a small ride for you to visit the beautiful city {{otherDetail.station}}</li>
+            <li>We can reserve the VIP lounge for you </li>
+            <li>We can book a meal for you in advanced</li>
+        </ul>
+
+    </div>
+</div>
